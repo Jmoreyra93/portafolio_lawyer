@@ -25,7 +25,7 @@ export default function Modal() {
                                     {/*header*/}
                                     <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                                         <h3 className="text-3xl font-semibold">
-                                            Front end
+                                            Asesoramiento
                                         </h3>
                                         <button
                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
@@ -40,7 +40,7 @@ export default function Modal() {
                                     <div className="relative p-6 flex-auto">
                                         <p className="my-4 text-slate-500 text-lg leading-relaxed">
                                             <ul className="text-left">
-                                                <li> <strong>Lenguajes y tecnologías aprendidas:</strong> HTML5, CSS, JavaScript</li>
+                                                <li> <strong>Brindamos asesoramiento 24 hs:</strong> ...</li>
                                                 <li> <strong>Tecnología preferencial:</strong> ReactJS</li>
                                                 <li> <strong>Librerias/Framework:</strong>  SASS, LESS, Tailwind, Boostrap, Material UI </li>
                                                 <li> <strong>Dependencias:</strong>  </li>

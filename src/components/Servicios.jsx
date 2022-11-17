@@ -60,13 +60,13 @@ const images = [
         width: '40%',
     },
     { 
-        url: 'https://images.pexels.com/photos/7755667/pexels-photo-7755667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        url: 'https://images.pexels.com/photos/53351/firearm-handgun-revolver-gun-53351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Delitos contra la vida',
         width: '20%',
     },
     {
         url: 'https://images.pexels.com/photos/5723196/pexels-photo-5723196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'Delitos contra la vida',
+        title: 'delitos contra la integridad sexual',
         width: '40%',
     },
     {
@@ -80,7 +80,7 @@ const images = [
         width: '38%',
     },
     {
-        url: 'https://images.pexels.com/photos/7755248/pexels-photo-7755248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        url: 'https://images.pexels.com/photos/7773260/pexels-photo-7773260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Delitos contra la libertad',
         width: '24%',
     },
@@ -91,7 +91,6 @@ export default function ProductCategories() {
     return (
         <Container component="section" sx={{ mt: 8, mb: 4 }}>
             <Typography variant="h4" marked="center" align="center" component="h2">
-                Servicios
             </Typography>
             <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
                 {images.map((image) => (

@@ -1,11 +1,6 @@
 import ley from '../assets/leyvrt1.jpg';
 
 const features = [
-  { name: 'Delitos de estupefacientes', description: 'Designed by Good Goods, Inc.' },
-  { name: 'Delitos contra la integridad sexual', description: 'Solid walnut base with rare earth magnets and powder coated steel card cover' },
-  { name: 'Delitos contra la vida e integridad física', description: '6.25" x 3.55" x 1.15"' },
-  { name: 'Delitos contra la propiedad', description: 'Hand sanded and finished with natural oil' },
-  { name: 'Delitos informáticos', description: 'Wood card tray and 3 refill packs' },
   { name: 'Delitos contra la libertad condicional', description: 'Made from natural materials. Grain and color vary with each item.' },
   { name: 'Etapa de ejecución - libertad condicional', description: 'Made from natural materials. Grain and color vary with each item.' },
   { name: 'Asistencia y asesoramiento personalizado durante el cumplimiento de condenas', description: 'Made from natural materials. Grain and color vary with each item.' },
@@ -17,10 +12,9 @@ export default function Example() {
     <div className="bg-white mx-20">
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 px-4 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Technical Specifications</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Nuestro Staff</h2>
           <p className="mt-4 text-gray-500">
-            The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-            steel divider separates active cards from new ones, or can be used to archive important task lists.
+          Al tratarse de procesos penales, resulta fundamental para nuestro staff entender las necesidades de quien confía su caso. Por ello, siempre habrá disponibilidad inmediata para actuar cuando la situación lo requiera. Trabajamos en el ámbito de CABA y Provincia de Buenos Aires, también en todo el país si se trata de causas que tramitan en el fuero federal. Trabajaremos así, de manera rápida y eficaz la mejor estrategia posible para la solución de su problema. 
           </p>
 
           <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
