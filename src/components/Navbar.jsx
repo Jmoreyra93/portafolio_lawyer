@@ -2,14 +2,11 @@ import React, { useState } from 'react';
 import {
   FaBars,
   FaTimes,
-  FaGithub,
   FaGoogle,
-  FaFacebook,
   FaInstagram,
   FaWhatsapp,
 } from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+
 import Curriculum from '../assets/CV-Julian-Moreyra.pdf';
 import Logo from '../assets/lawyers.svg';
 import { Link } from 'react-scroll';
@@ -21,7 +18,7 @@ const Navbar = () => {
   return (
     <div className='fixed z-10 w-full h-[80px] flex justify-between items-center px-4 bg-[#f6f5e2] text-stone-800	'>
       <div>
-        <img src={Logo} alt='Logo Image' style={{ width: '50px' }} />
+        <img src={Logo} alt='Logo' style={{ width: '50px' }} />
       </div>
 
       {/* menu */}
@@ -103,7 +100,7 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full text-stone-800'
-              href='https://wa.me/+5491144776913 ' target='_blank'
+              href='https://wa.me/+5491144776913 ' target='_blank' rel="noreferrer"
             >
               WhatsApp <FaWhatsapp size={30} />
             </a>
