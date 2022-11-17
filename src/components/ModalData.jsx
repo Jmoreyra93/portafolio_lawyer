@@ -10,7 +10,7 @@ export default function Modal() {
                 type="button"
                 onClick={() => setShowModal(true)}
             >
-                DataBase
+                Contacto
             </button>
             {showModal ? (
                 <>

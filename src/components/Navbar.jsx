@@ -3,9 +3,10 @@ import {
   FaBars,
   FaTimes,
   FaGithub,
-  FaLinkedin,
+  FaGoogle,
   FaFacebook,
-  FaLinkedinIn,
+  FaInstagram,
+  FaWhatsapp,
 } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
@@ -102,25 +103,18 @@ const Navbar = () => {
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
             <a
               className='flex justify-between items-center w-full text-stone-800'
-              href='https://www.linkedin.com/in/moreyra-julian/' target='_blank'
+              href='https://wa.me/+5491144776913 ' target='_blank'
             >
-              WhatsApp <FaLinkedin size={30} />
+              WhatsApp <FaWhatsapp size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1F2A39]'>
-            <a
-              className='flex justify-between items-center w-full text-stone-800'
-              href='https://github.com/Jmoreyra93' target='_blank'
-            >
-              Contacto <FaGithub size={30} />
-            </a>
-          </li>
+
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
             <a
               className='flex justify-between items-center w-full text-stone-800'
               href='/'
             >
-              Email <HiOutlineMail size={30} />
+              Email <FaGoogle size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
@@ -128,7 +122,7 @@ const Navbar = () => {
               className='flex justify-between items-center w-full text-stone-800'
               href={Curriculum} download="Curriculum Vitae Julian Moreyra"
             >
-              Instagram <BsFillPersonLinesFill size={30} />
+              Instagram <FaInstagram size={30} />
 
 
             </a>

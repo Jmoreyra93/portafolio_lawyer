@@ -1,61 +1,145 @@
-import { BoltIcon, DevicePhoneMobileIcon, GlobeAltIcon, ScaleIcon } from '@heroicons/react/24/outline'
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import ButtonBase from '@mui/material/ButtonBase';
+import Container from '@mui/material/Container';
 
-const features = [
-    {
-        name: 'Competitive exchange rates',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: GlobeAltIcon,
-    },
-    {
-        name: 'No hidden fees',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: ScaleIcon,
-    },
-    {
-        name: 'Transfers are instant',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: BoltIcon,
-    },
-    {
-        name: 'Mobile notifications',
-        description:
-            'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-        icon: DevicePhoneMobileIcon,
-    },
-]
+const ImageBackdrop = styled('div')(({ theme }) => ({
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    background: '#000',
+    opacity: 0.5,
+    transition: theme.transitions.create('opacity'),
+}));
 
-export default function Example() {
+const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
+    position: 'relative',
+    display: 'block',
+    padding: 0,
+    borderRadius: 0,
+    height: '25vh',
+    [theme.breakpoints.down('md')]: {
+        width: '100% !important',
+        height: 100,
+    },
+    '&:hover': {
+        zIndex: 1,
+    },
+    '&:hover .imageBackdrop': {
+        opacity: 0.15,
+    },
+    '&:hover .imageMarked': {
+        opacity: 0,
+    },
+    '&:hover .imageTitle': {
+        border: '4px solid currentColor',
+    },
+    '& .imageTitle': {
+        position: 'relative',
+        padding: `${theme.spacing(2)} ${theme.spacing(4)} 14px`,
+    },
+    '& .imageMarked': {
+        height: 3,
+        width: 18,
+        background: theme.palette.common.white,
+        position: 'absolute',
+        bottom: -2,
+        left: 'calc(50% - 9px)',
+        transition: theme.transitions.create('opacity'),
+    },
+}));
+
+const images = [
+    {
+        url: 'https://images.pexels.com/photos/3602778/pexels-photo-3602778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        title: 'Delitos de estupefacientes',
+        width: '40%',
+    },
+    { 
+        url: 'https://images.pexels.com/photos/7755667/pexels-photo-7755667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Delitos contra la vida',
+        width: '20%',
+    },
+    {
+        url: 'https://images.pexels.com/photos/5723196/pexels-photo-5723196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        title: 'Delitos contra la vida',
+        width: '40%',
+    },
+    {
+        url: 'https://images.pexels.com/photos/6266277/pexels-photo-6266277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        title: 'Delitos contra la propiedad',
+        width: '38%',
+    },
+    {
+        url: 'https://images.pexels.com/photos/5240541/pexels-photo-5240541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+        title: 'Delitos informáticos',
+        width: '38%',
+    },
+    {
+        url: 'https://images.pexels.com/photos/7755248/pexels-photo-7755248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Delitos contra la libertad',
+        width: '24%',
+    },
+
+];
+
+export default function ProductCategories() {
     return (
-        <div className="bg-white py-24 sm:py-32 lg:py-40">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="sm:text-center">
-                    <h2 className="text-lg font-semibold leading-8 text-indigo-600">Transactions</h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better way to send money</p>
-                    <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-                        Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in
-                        accusamus quisquam.
-                    </p>
-                </div>
-
-                <div className="mt-20 max-w-lg sm:mx-auto md:max-w-none">
-                    <div className="grid grid-cols-1 gap-y-16 md:grid-cols-2 md:gap-x-12 md:gap-y-16">
-                        {features.map((feature) => (
-                            <div key={feature.name} className="relative flex flex-col gap-6 sm:flex-row md:flex-col lg:flex-row">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500 text-white sm:shrink-0">
-                                    <feature.icon className="h-8 w-8" aria-hidden="true" />
-                                </div>
-                                <div className="sm:min-w-0 sm:flex-1">
-                                    <p className="text-lg font-semibold leading-8 text-gray-900">{feature.name}</p>
-                                    <p className="mt-2 text-base leading-7 text-gray-600">{feature.description}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+        <Container component="section" sx={{ mt: 8, mb: 4 }}>
+            <Typography variant="h4" marked="center" align="center" component="h2">
+                Servicios
+            </Typography>
+            <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
+                {images.map((image) => (
+                    <ImageIconButton
+                        key={image.title}
+                        style={{
+                            width: image.width,
+                        }}
+                    >
+                        <Box
+                            sx={{
+                                position: 'absolute',
+                                left: 0,
+                                right: 0,
+                                top: 0,
+                                bottom: 0,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center 40%',
+                                backgroundImage: `url(${image.url})`,
+                            }}
+                        />
+                        <ImageBackdrop className="imageBackdrop" />
+                        <Box
+                            sx={{
+                                position: 'absolute',
+                                left: 0,
+                                right: 0,
+                                top: 0,
+                                bottom: 0,
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                color: 'common.white',
+                            }}
+                        >
+                            <Typography
+                                component="h3"
+                                variant="h6"
+                                color="inherit"
+                                className="imageTitle"
+                            >
+                                {image.title}
+                                <div className="imageMarked" />
+                            </Typography>
+                        </Box>
+                    </ImageIconButton>
+                ))}
+            </Box>
+        </Container>
+    );
 }

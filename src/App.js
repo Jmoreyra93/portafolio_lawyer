@@ -1,12 +1,11 @@
 import About from "./components/About";
 import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
 import ModalAll from "./components/Modal";
 import Hero from "./components/Hero";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import Support from "./components/Support";
-import Features from "./components/Features";
+import Contact from "./components/Contact";
+import Items from "./components/Items";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -15,11 +14,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Skills />
-      <Features />
       <ModalAll />
       <Support />
       <Contact />
+      <Items />
       <Footer />
 
     </div>
