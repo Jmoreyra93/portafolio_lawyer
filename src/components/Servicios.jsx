@@ -59,7 +59,7 @@ const images = [
         title: 'Delitos de estupefacientes',
         width: '40%',
     },
-    { 
+    {
         url: 'https://images.pexels.com/photos/53351/firearm-handgun-revolver-gun-53351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         title: 'Delitos contra la vida',
         width: '20%',
@@ -89,56 +89,74 @@ const images = [
 
 export default function ProductCategories() {
     return (
-        <Container component="section" sx={{ mt: 8, mb: 4 }}>
-            <Typography variant="h4" marked="center" align="center" component="h2">
-            </Typography>
-            <Box sx={{ mt: 8, display: 'flex', flexWrap: 'wrap' }}>
-                {images.map((image) => (
-                    <ImageIconButton
-                        key={image.title}
-                        style={{
-                            width: image.width,
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                position: 'absolute',
-                                left: 0,
-                                right: 0,
-                                top: 0,
-                                bottom: 0,
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center 40%',
-                                backgroundImage: `url(${image.url})`,
-                            }}
-                        />
-                        <ImageBackdrop className="imageBackdrop" />
-                        <Box
-                            sx={{
-                                position: 'absolute',
-                                left: 0,
-                                right: 0,
-                                top: 0,
-                                bottom: 0,
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                color: 'common.white',
-                            }}
-                        >
-                            <Typography
-                                component="h3"
-                                variant="h6"
-                                color="inherit"
-                                className="imageTitle"
-                            >
-                                {image.title}
-                                <div className="imageMarked" />
+        <>
+            <div name='about' className='w-full h-screen bg-[#adb5bd] text-stone-800'>
+                <div className='flex flex-col justify-center items-center w-full h-full'>
+                    <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
+                        <div className='sm:text-right pb-8 pl-4'>
+                            <p className='text-4xl font-bold inline border-b-4 border-gray-200'>
+                                Servicios
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className='w-full bg-[#adb5bd] text-stone-800'>
+
+                        <Container component="section" >
+                            <Typography variant="h4" marked="center" align="center" component="h2">
                             </Typography>
-                        </Box>
-                    </ImageIconButton>
-                ))}
-            </Box>
-        </Container>
+                            <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                                {images.map((image) => (
+                                    <ImageIconButton
+                                        key={image.title}
+                                        style={{
+                                            width: image.width,
+                                        }}
+                                    >
+                                        <Box
+                                            sx={{
+                                                position: 'absolute',
+                                                left: 0,
+                                                right: 0,
+                                                top: 0,
+                                                bottom: 0,
+                                                backgroundSize: 'cover',
+                                                backgroundPosition: 'center 40%',
+                                                backgroundImage: `url(${image.url})`,
+                                            }}
+                                        />
+                                        <ImageBackdrop className="imageBackdrop" />
+                                        <Box
+                                            sx={{
+                                                position: 'absolute',
+                                                left: 0,
+                                                right: 0,
+                                                top: 0,
+                                                bottom: 0,
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                color: 'common.white',
+                                            }}
+                                        >
+                                            <Typography
+                                                component="h3"
+                                                variant="h6"
+                                                color="inherit"
+                                                className="imageTitle"
+                                            >
+                                                {image.title}
+                                                <div className="imageMarked" />
+                                            </Typography>
+                                        </Box>
+                                    </ImageIconButton>
+                                ))}
+                            </Box>
+                        </Container>
+
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
