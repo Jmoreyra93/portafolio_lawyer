@@ -90,7 +90,7 @@ const images = [
 export default function ProductCategories() {
     return (
         <>
-            <div name='about' className='w-full h-screen bg-[#adb5bd] text-stone-800'>
+            <div name='servicios' className='w-full h-screen bg-[#212529] '>
                 <div className='flex flex-col justify-center items-center w-full h-full'>
                     <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                         <div className='sm:text-right pb-8 pl-4'>
@@ -100,7 +100,7 @@ export default function ProductCategories() {
                         </div>
                     </div>
 
-                    <div className='w-full bg-[#adb5bd] text-stone-800'>
+                    <div className='w-full bg-[#212529] text-stone-800'>
 
                         <Container component="section" >
                             <Typography variant="h4" marked="center" align="center" component="h2">

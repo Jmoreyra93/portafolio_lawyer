@@ -5,29 +5,31 @@ import {
   FaInstagram,
   FaWhatsapp,
 } from 'react-icons/fa';
-
-import Logo from '../assets/lawyers.svg';
+import BalanceIcon from '@mui/icons-material/Balance';
 import { Link } from 'react-scroll';
+import './Navbar.css'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed z-10 w-full h-[80px] flex justify-between items-center px-4 bg-[#212529] text-white	'>
-      <div>
-        <img src={Logo} alt='Logo' style={{ width: '50px' }} />
+    <div className='fixed z-10 w-full h-[60px] flex justify-between items-center px-4 bg-[#212529] text-white	'>
+      <div className='flex'>
+        <BalanceIcon/>
+
+        <p className='px-4'>Dra Spagna</p>
       </div>
 
       {/* menu */}
       <ul className='hidden md:flex'>
         <li>
-          <Link to='home' smooth={true} duration={500}>
+          <Link to='home' smooth={true}  duration={500} activeClass="active" className=' active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
             Inicio
           </Link>
         </li>
         <li>
-          <Link to='about' smooth={true} duration={500}>
+          <Link to='about' smooth={true}  duration={500}>
             Sobre mi
           </Link>
         </li>

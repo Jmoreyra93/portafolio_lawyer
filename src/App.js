@@ -5,6 +5,7 @@ import Servicios from "./components/Servicios";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Features from "./components/Staff";
+import HowWork from "./components/HowWork";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Servicios />
       <Contact />
+      <HowWork />
       <Features />
       <Footer />
 
