@@ -54,7 +54,7 @@ const Contact = () => {
       <div className='w-full  bg-[#adb5bd] flex justify-center items-center '>
         <img className='mx-auto w-full' src={Banner} alt="HTML icon" />
       </div>
-      <div className='grid grid-cols-2 '>
+      <div className='grid grid-cols-2 max-lg:grid-cols-1'>
 
         <div className='w-full h-screen bg-[#adb5bd] flex justify-center items-center p-4 pt-20 px-20'>
           <form className='flex flex-col  max-w-[600px] w-full' ref={form} onSubmit={sendEmail}   >
