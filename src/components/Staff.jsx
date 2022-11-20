@@ -1,6 +1,7 @@
+import GavelIcon from '@mui/icons-material/Gavel';
 
 const features = [
-  { name: 'Delitos contra la libertad condicional', description: 'Made from natural materials. Grain and color vary with each item.' },
+  { name: 'Delitos contra la libertad condicional', description: 'Made from natural materials. Grain and color vary with each item.', icon: '<GavelIcon />' },
   { name: 'Etapa de ejecución - libertad condicional', description: 'Made from natural materials. Grain and color vary with each item.' },
   { name: 'Asistencia y asesoramiento personalizado durante el cumplimiento de condenas', description: 'Made from natural materials. Grain and color vary with each item.' },
   { name: 'Urgencias con personas detenidas 24hs', description: 'Made from natural materials. Grain and color vary with each item.' },
@@ -16,11 +17,13 @@ export default function Example() {
           Al tratarse de procesos penales, resulta fundamental para nuestro staff entender las necesidades de quien confía su caso. Por ello, siempre habrá disponibilidad inmediata para actuar cuando la situación lo requiera. Trabajamos en el ámbito de CABA y Provincia de Buenos Aires, también en todo el país si se trata de causas que tramitan en el fuero federal. Trabajaremos así, de manera rápida y eficaz la mejor estrategia posible para la solución de su problema. 
           </p>
 
-          <dl className="mt-16 grid  gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+          <dl className="mt-16 px-28 grid  gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
             {features.map((feature) => (
               <div key={feature.name} className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">{feature.name}</dt>
+                <dt className="font-medium text-center text-gray-900">{feature.name}</dt>
+                <dt className="font-medium text-center text-gray-900"><GavelIcon /></dt>
                 {/* <dd className="mt-2 text-sm text-white">{feature.description}</dd> */}
+                <dd className="mt-2 text-sm text-white"></dd>
               </div>
             ))}
           </dl>

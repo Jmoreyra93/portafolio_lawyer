@@ -40,7 +40,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to='contact' smooth={true} duration={500}>
+          <Link to='contact' offset={-50} smooth={true} duration={500}>
             Contactenos
           </Link>
         </li>
