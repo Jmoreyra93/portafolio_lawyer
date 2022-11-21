@@ -66,7 +66,7 @@ const images = [
     },
     {
         url: 'https://images.pexels.com/photos/5723196/pexels-photo-5723196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        title: 'delitos contra la integridad sexual',
+        title: 'Delitos contra la integridad sexual',
         width: '40%',
     },
     {
