@@ -50,16 +50,17 @@ const Contact = () => {
 
 
   return (
-    <div name='contact'>
+    <div name='contact' className='bg-[#adb5bd]  pb-20' >
+      
       <div className='w-full  bg-[#adb5bd] flex justify-center items-center '>
         <img className='mx-auto w-full' src={Banner} alt="HTML icon" />
       </div>
-      <div className='grid grid-cols-2 max-lg:grid-cols-1'>
+      <div className='grid grid-cols-2 max-lg:grid-cols-1 px-8'>
 
-        <div className='w-full h-screen bg-[#adb5bd] flex justify-center items-center p-4 pb-20 pt-20 px-20'>
-          <form className='flex flex-col  max-w-[600px] w-full' ref={form} onSubmit={sendEmail}   >
+        <div className='w-full h-screen bg-[#adb5bd] flex justify-center items-center p-4 pb-20 pt-20 px-20 max-lg:pt-32 max-md:pt-0' >
+          <form className='flex flex-col pt-20 max-w-[600px] w-full' ref={form} onSubmit={sendEmail}   >
             <div className='pb-8'>
-              <p className='text-4xl font-bold inline border-b-4 border-gray-200 text-stone-800'>Contactenos</p>
+              <p className='text-4xl font-bold inline border-b-4 border-amber-400 text-stone-800'>Contactenos</p>
               {/* <p className='text-[#829e7e] py-4'>Submit the form below or shoot me an email - julianmoreyra.192@gmail.com</p> */}
             </div>
             <label>Nombre</label>
@@ -80,7 +81,7 @@ const Contact = () => {
 
           </form>
         </div>
-        <div className='w-full h-screen bg-[#adb5bd] flex flex-col justify-center items-center p-4 pt-10 px-20'>
+        <div className='w-full h-screen bg-[#adb5bd] flex flex-col  items-center p-4 pt-20 px-20'>
           <p className='text-2xl font-bold inline text-stone-800 pb-10'>Si usted o alguien próximo ha sido detenido o se le imputa un delito, acuda a nuestra firma cuanto antes</p>
 
           <List sx={{ width: '100%', maxWidth: 360 }}>

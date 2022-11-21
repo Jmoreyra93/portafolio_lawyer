@@ -7,7 +7,6 @@ import {
 } from 'react-icons/fa';
 import BalanceIcon from '@mui/icons-material/Balance';
 import { Link } from 'react-scroll';
-import './Navbar.css'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -56,7 +55,7 @@ const Navbar = () => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#f6f5e2] flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full h-screen text-gray-300 bg-[#343a40] flex flex-col justify-center items-center'
         }
       >
         <li className='py-6 text-4xl'>

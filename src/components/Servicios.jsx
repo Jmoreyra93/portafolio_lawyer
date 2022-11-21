@@ -84,19 +84,33 @@ const images = [
         title: 'Delitos contra la libertad',
         width: '24%',
     },
+    {
+        url: 'https://images.pexels.com/photos/163431/fist-blow-power-wrestling-163431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Delitos contra la integridad física',
+        width: '40%',
+    },
+    {
+        url: 'https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        title: 'Etapa de ejecución',
+        width: '20%',
+    },
+    {
+        url: 'https://s3.amazonaws.com/public.diariojudicial.com/imagenes/000/078/875/000078875.jpg',
+        title: 'Libertad condicional',
+        width: '40%',
+    },
 
 ];
 
 export default function ProductCategories() {
     return (
         <>
-            <div name='servicios' className='w-full h-screen bg-[#212529] '>
+            <div name='servicios' className='w-full py-16 bg-[#212529] max-lg:p-16'>
                 <div className='flex flex-col justify-center items-center w-full h-full'>
                     <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                         <div className='sm:text-right pb-8 pl-4'>
-                            <p className='text-4xl font-bold inline border-b-4 border-gray-200'>
-                                Servicios
-                            </p>
+                        <p className='text-4xl font-bold inline border-b-4 border-amber-400 text-white'>Servicios</p>
+
                         </div>
                     </div>
 
