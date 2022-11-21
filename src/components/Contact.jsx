@@ -56,7 +56,7 @@ const Contact = () => {
       </div>
       <div className='grid grid-cols-2 max-lg:grid-cols-1'>
 
-        <div className='w-full h-screen bg-[#adb5bd] flex justify-center items-center p-4 pt-20 px-20'>
+        <div className='w-full h-screen bg-[#adb5bd] flex justify-center items-center p-4 pb-20 pt-20 px-20'>
           <form className='flex flex-col  max-w-[600px] w-full' ref={form} onSubmit={sendEmail}   >
             <div className='pb-8'>
               <p className='text-4xl font-bold inline border-b-4 border-gray-200 text-stone-800'>Contactenos</p>
@@ -80,7 +80,7 @@ const Contact = () => {
 
           </form>
         </div>
-        <div className='w-full h-screen bg-[#adb5bd] flex flex-col justify-center items-center p-4 pt-20 px-20'>
+        <div className='w-full h-screen bg-[#adb5bd] flex flex-col justify-center items-center p-4 pt-10 px-20'>
           <p className='text-2xl font-bold inline text-stone-800 pb-10'>Si usted o alguien próximo ha sido detenido o se le imputa un delito, acuda a nuestra firma cuanto antes</p>
 
           <List sx={{ width: '100%', maxWidth: 360 }}>
