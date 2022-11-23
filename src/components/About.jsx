@@ -1,39 +1,43 @@
 import React from 'react';
 import PhotoLawyer from '../assets/photo1.jpeg';
+import Pulse from 'react-reveal/Pulse';
 
 
 const About = () => {
   return (
     <>
-      <div name='about' className='w-full py-16 bg-[#adb5bd] text-stone-800 max-lg:p-16'>
-        <div className='flex flex-col justify-center items-center w-full h-full'>
+
+      <div name='about' className='w-full py-16 bg-[#DDD4C3] text-stone-800 max-lg:p-16'>
+        <div className='flex flex-col justify-center items-center w-full h-full '>
           <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
 
             <div className='sm:text-right pb-8 pl-4'>
-              <p className='text-4xl font-bold inline border-b-4 border-amber-400'>
+              <p className='text-4xl font-bold inline'>
                 Sobre mi
               </p>
             </div>
             <div></div>
           </div>
-          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
 
-            <div className='sm:text-right text-4xl font-bold'>
-              <img className='w-80 mx-auto' src={PhotoLawyer} alt="HTML icon" />
+          <Pulse>
+            <div className='max-w-[900px] w-full grid bg-[#DBC48E] shadow-md hover:shadow-lg rounded-md	max-lg:pr-0 sm:grid-cols-2  pr-4'>
 
+              <div className='sm:text-right font-bold'>
+                <img className='w-96' src={PhotoLawyer} alt="HTML icon" />
+
+              </div>
+              <div className='text-[#0d1b2a] bg-[#DBC48E]  flex justify-center self-center'>
+                <p className='text-xl text-[#0d1b2a] max-lg:p-4'>Abogada recibida en la Universidad de Buenos Aires (UBA) con una formación amplia y sólida en Derecho Penal. Ha realizado posgrado en Derecho Penal y Cibercrimen específicamente, formación y perfeccionamiento en litigación penal y maestría actualmente en el tema. Posee junto al equipo de trabajo que la acompaña, una responsable aptitud en asesoramiento y representación por la vocación que les impulsa en la profesión. </p>
+              </div>
             </div>
+          </Pulse>
 
-
-            <div className='text-[#0d1b2a]'>
-              <p>Abogada recibida en la Universidad de Buenos Aires (UBA) con una formación amplia y sólida en Derecho Penal. Ha realizado posgrado en Derecho Penal y Cibercrimen específicamente, formación y perfeccionamiento en litigación penal y maestría actualmente en el tema. Posee junto al equipo de trabajo que la acompaña, una responsable aptitud en asesoramiento y representación por la vocación que les impulsa en la profesión. </p>
-            </div>
-          </div>
         </div>
       </div>
-      <div className='bg-[#adb5bd]'>
+      <div className='bg-[#DDD4C3]'>
         <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
-          <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#FBBF24" />
-          <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#212529" />
+          <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#DBC48E" />
+          <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#2E2E2E" />
         </svg>
       </div>
     </>

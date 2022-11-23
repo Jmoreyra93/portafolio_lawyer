@@ -4,13 +4,13 @@ import { Link } from 'react-scroll';
 function Footer() {
   return (
     <>
-      <div className='bg-[#adb5bd]'>
+      <div className='bg-[#DDD4C3]'>
         <svg viewBox="0 -20 700 110" width="100%" height="110" preserveAspectRatio="none">
-          <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#FBBF24" />
-          <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#212529" />
+          <path transform="translate(0, -20)" d="M0,10 c80,-22 240,0 350,18 c90,17 260,7.5 350,-20 v50 h-700" fill="#DBC48E" />
+          <path d="M0,10 c80,-18 230,-12 350,7 c80,13 260,17 350,-5 v100 h-700z" fill="#2E2E2E" />
         </svg>
       </div>
-      <footer className='bg-[#212529]'>
+      <footer className='bg-[#2E2E2E]'>
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
           {/* Top area: Blocks */}

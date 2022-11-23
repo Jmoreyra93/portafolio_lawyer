@@ -13,7 +13,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed z-10 w-full h-[60px] flex justify-between items-center px-4 bg-[#212529] text-white	'>
+    <div className='fixed z-10 w-full h-[60px] flex justify-between items-center px-4 bg-[#2E2E2E] text-white	'>
       <div className='flex'>
         <BalanceIcon/>
 

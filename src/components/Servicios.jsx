@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
+import Flip from 'react-reveal/Flip';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
     position: 'absolute',
@@ -106,28 +107,31 @@ export default function ProductCategories() {
     return (
         <>
 
-            <div name='servicios' className='w-full py-16 bg-[#212529] max-lg:p-16'>
+            <div name='servicios' className='w-full py-16  bg-[#2E2E2E] shadow-inner max-lg:p-16'>
                 <div className='flex flex-col justify-center items-center w-full h-full'>
                     <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                         <div className='sm:text-right pb-8 pl-4'>
-                            <p className='text-4xl font-bold inline border-b-4 border-amber-400 text-white'>Servicios</p>
+                            <p className='text-4xl font-bold inline text-white'>Servicios</p>
 
                         </div>
                     </div>
 
-                    <div className='w-full bg-[#212529] text-stone-800'>
+                    <div className='w-full bg-[#2E2E2E] text-stone-800'>
 
                         <Container component="section" >
                             <Typography variant="h4" marked="center" align="center" component="h2">
                             </Typography>
+
                             <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
                                 {images.map((image) => (
+
                                     <ImageIconButton
                                         key={image.title}
                                         style={{
                                             width: image.width,
                                         }}
                                     >
+
                                         <Box
                                             sx={{
                                                 position: 'absolute',
@@ -141,39 +145,44 @@ export default function ProductCategories() {
                                             }}
                                         />
                                         <ImageBackdrop className="imageBackdrop" />
-                                        <Box
-                                            sx={{
-                                                position: 'absolute',
-                                                left: 0,
-                                                right: 0,
-                                                top: 0,
-                                                bottom: 0,
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                color: 'common.white',
-                                            }}
-                                        >
-                                            <Typography
-                                                component="h3"
-                                                variant="h6"
-                                                color="inherit"
-                                                className="imageTitle"
+                                        <Flip left>
+
+                                            <Box
+                                                sx={{
+                                                    position: 'absolute',
+                                                    left: 0,
+                                                    right: 0,
+                                                    top: 0,
+                                                    bottom: 0,
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    color: 'common.white',
+                                                }}
                                             >
-                                                {image.title}
-                                                <div className="imageMarked" />
-                                            </Typography>
-                                        </Box>
+                                                <Typography
+                                                    component="h3"
+                                                    variant="h6"
+                                                    color="inherit"
+                                                    className="imageTitle"
+                                                >
+                                                    {image.title}
+                                                    <div className="imageMarked" />
+                                                </Typography>
+                                            </Box>
+                                        </Flip>
+
                                     </ImageIconButton>
+
                                 ))}
                             </Box>
                         </Container>
 
                     </div>
                 </div>
-                
+
             </div>
-            
+
         </>
     );
 }
