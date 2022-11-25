@@ -88,15 +88,15 @@ const Contact = () => {
                   <WhatsAppIcon />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText primary="WhatsApp" secondary="1144776913 / 1122423900" />
+              <ListItemText sx={{ color: '#ddd4c3' }} primary="WhatsApp" secondary="1144776913 / 1122423900" />
             </ListItem>
             <ListItem>
               <ListItemAvatar>
-                <Avatar sx={{ bgcolor: '#343a40' }}>
+                <Avatar  sx={{ bgcolor: '#343a40' }}>
                   <EmailIcon />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText primary="Email" secondary="spagnayasoc@gmail.com" />
+              <ListItemText sx={{ color: '#ddd4c3' }} primary="Email" secondary="spagnayasoc@gmail.com" />
             </ListItem>
             <ListItem>
               <ListItemAvatar>
@@ -104,7 +104,7 @@ const Contact = () => {
                   <InstagramIcon />
                 </Avatar>
               </ListItemAvatar>
-              <ListItemText primary="Instagram" secondary="@spagnayasoc" />
+              <ListItemText sx={{ color: '#ddd4c3' }} primary="Instagram" secondary="@spagnayasoc" />
             </ListItem>
           </List>
 

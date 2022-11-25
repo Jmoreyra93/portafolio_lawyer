@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
-import Flip from 'react-reveal/Flip';
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
     position: 'absolute',
@@ -145,32 +144,30 @@ export default function ProductCategories() {
                                             }}
                                         />
                                         <ImageBackdrop className="imageBackdrop" />
-                                        <Flip left>
 
-                                            <Box
-                                                sx={{
-                                                    position: 'absolute',
-                                                    left: 0,
-                                                    right: 0,
-                                                    top: 0,
-                                                    bottom: 0,
-                                                    display: 'flex',
-                                                    alignItems: 'center',
-                                                    justifyContent: 'center',
-                                                    color: 'common.white',
-                                                }}
+                                        <Box
+                                            sx={{
+                                                position: 'absolute',
+                                                left: 0,
+                                                right: 0,
+                                                top: 0,
+                                                bottom: 0,
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                color: 'common.white',
+                                            }}
+                                        >
+                                            <Typography
+                                                component="h3"
+                                                variant="h6"
+                                                color="inherit"
+                                                className="imageTitle"
                                             >
-                                                <Typography
-                                                    component="h3"
-                                                    variant="h6"
-                                                    color="inherit"
-                                                    className="imageTitle"
-                                                >
-                                                    {image.title}
-                                                    <div className="imageMarked" />
-                                                </Typography>
-                                            </Box>
-                                        </Flip>
+                                                {image.title}
+                                                <div className="imageMarked" />
+                                            </Typography>
+                                        </Box>
 
                                     </ImageIconButton>
 

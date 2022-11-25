@@ -9,16 +9,7 @@ const About = () => {
 
       <div name='about' className='w-full py-16 bg-[#DDD4C3] text-stone-800 max-lg:p-16'>
         <div className='flex flex-col justify-center items-center w-full h-full '>
-          <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
-
-            <div className='sm:text-right pb-8 pl-4'>
-              <p className='text-4xl font-bold inline'>
-                Sobre mi
-              </p>
-            </div>
-            <div></div>
-          </div>
-
+          
           <Pulse>
             <div className='max-w-[900px] w-full grid bg-[#DBC48E] shadow-md hover:shadow-lg rounded-md	max-lg:pr-0 sm:grid-cols-2  pr-4'>
 
@@ -26,7 +17,10 @@ const About = () => {
                 <img className='w-96' src={PhotoLawyer} alt="HTML icon" />
 
               </div>
-              <div className='text-[#0d1b2a] bg-[#DBC48E]  flex justify-center self-center'>
+              <div className='text-[#0d1b2a] bg-[#DBC48E]  flex flex-col justify-center self-center'>
+                <p className='text-4xl font-bold inline'>
+                  Sobre mi
+                </p>
                 <p className='text-xl text-[#0d1b2a] max-lg:p-4'>Abogada recibida en la Universidad de Buenos Aires (UBA) con una formación amplia y sólida en Derecho Penal. Ha realizado posgrado en Derecho Penal y Cibercrimen específicamente, formación y perfeccionamiento en litigación penal y maestría actualmente en el tema. Posee junto al equipo de trabajo que la acompaña, una responsable aptitud en asesoramiento y representación por la vocación que les impulsa en la profesión. </p>
               </div>
             </div>
