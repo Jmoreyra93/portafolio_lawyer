@@ -5,11 +5,32 @@ import Servicios from "./components/Servicios";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Features from "./components/Staff";
+import Loader from "./components/Loader";
+import { useState, useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import { dark } from "./styles/Themes";
+import { ThemeProvider } from "styled-components";
+
 
 
 function App() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 3000);
+  }, [])
+
   return (
     <div>
+      <ThemeProvider theme={dark}>
+
+        <AnimatePresence>
+          {loaded ? null : <Loader />}
+        </AnimatePresence>
+      </ThemeProvider>
+
       <Navbar />
       <Hero />
       <About />

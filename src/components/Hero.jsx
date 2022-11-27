@@ -8,6 +8,7 @@ const Hero = () => {
             <video
                 className='object-cover h-full w-full absolute -z-10'
                 src={heroVid}
+                type="video/mp4"
                 autoPlay
                 loop
                 muted

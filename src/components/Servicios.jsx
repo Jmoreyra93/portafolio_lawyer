@@ -104,18 +104,17 @@ const images = [
 
 export default function ProductCategories() {
     return (
-        <>
 
-            <div name='servicios' className='w-full py-16  bg-[#2E2E2E] shadow-inner max-lg:p-16'>
+            <div data-scroll-container name='servicios' className='w-full pt-18 pb-32 bg-[#2E2E2E]  max-lg:p-16'>
                 <div className='flex flex-col justify-center items-center w-full h-full'>
                     <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                         <div className='sm:text-right pb-8 pl-4'>
-                            <p className='text-4xl font-bold inline text-white'>Servicios</p>
+                            <p className='text-4xl font-montserrat inline text-white pb-4'>Servicios</p>
 
                         </div>
                     </div>
 
-                    <div className='w-full bg-[#2E2E2E] text-stone-800'>
+                    <div className='w-full  bg-[#2E2E2E] text-stone-800'>
 
                         <Container component="section" >
                             <Typography variant="h4" marked="center" align="center" component="h2">
@@ -180,6 +179,5 @@ export default function ProductCategories() {
 
             </div>
 
-        </>
     );
 }
