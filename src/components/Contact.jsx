@@ -50,11 +50,11 @@ const Contact = () => {
 
 
   return (
-    <div name='contact' className='bg-[url("/src/assets/leyhor.jpg")]  bg-no-repeat bg-cover bg-fixed max-lg:p-2 p-20' >
+    <div name='contact' className='bg-[#fff]  bg-no-repeat bg-cover bg-fixed max-lg:p-2 p-20' >
 
       <div className='grid grid-cols-2  max-lg:grid-cols-1 px-8'>
         <Pulse>
-          <div className='w-full h-screen rounded-l-md	shadow-md hover:shadow-lg bg-[#343a40d0] flex justify-center items-center p-4 pb-20 pt-20 px-20 max-lg:px-2  max-md:pt-0 max-md:h-min' >
+          <div className='w-full h-screen rounded-l-3xl	shadow-md hover:shadow-lg bg-[#343a40d0] flex justify-center items-center p-4 pb-20 pt-20 px-20 max-lg:px-4  max-md:pt-4 max-md:h-min max-lg:rounded-t-3xl max-lg:rounded-bl-none' >
             <form className='flex flex-col pt-20 max-w-[600px] w-full max-lg:pt-2 ' ref={form} onSubmit={sendEmail}   >
               <div className='pb-8'>
                 <p className='text-4xl font-bold inline  text-gray-200'>Contactenos</p>
@@ -78,7 +78,7 @@ const Contact = () => {
 
             </form>
           </div>
-        <div className='w-full h-screen bg-[#343a40] rounded-r-md flex flex-col  items-center p-4 pt-20 px-20 max-lg:px-2  max-md:h-min max-md:pt-2 max-md:pb-8'>
+        <div className='w-full h-screen bg-[#343a40] rounded-r-md flex flex-col  items-center p-4 pt-20 px-20 max-lg:px-2  max-md:h-min max-md:pt-2 max-md:pb-8 max-lg:rounded-tr-none max-lg:rounded-b-3xl'>
           <p className='text-2xl font-bold inline text-gray-200 pt-20'>Info</p>
 
           <List sx={{ width: '100%', maxWidth: 360 }}>

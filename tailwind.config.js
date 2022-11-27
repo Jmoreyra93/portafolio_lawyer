@@ -10,6 +10,7 @@ module.exports = {
         'sail': ['Sail', 'cursive'],
         
       },
+      
     },
     backgroundImage: {
       'pack-train': "url('assets/banner2.jpg')",

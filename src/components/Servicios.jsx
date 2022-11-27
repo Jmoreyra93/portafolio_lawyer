@@ -22,6 +22,8 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
     padding: 0,
     borderRadius: 0,
     height: '25vh',
+    cursor: 'default',
+
     [theme.breakpoints.down('md')]: {
         width: '100% !important',
         height: 100,
@@ -36,7 +38,8 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
         opacity: 0,
     },
     '&:hover .imageTitle': {
-        border: '4px solid currentColor',
+        border: '4px solid currentColor ',
+        borderRadius: '24px',
     },
     '& .imageTitle': {
         position: 'relative',
@@ -105,16 +108,16 @@ const images = [
 export default function ProductCategories() {
     return (
 
-            <div data-scroll-container name='servicios' className='w-full pt-18 pb-32 bg-[#2E2E2E]  max-lg:p-16'>
+            <div data-scroll-container name='servicios' className='w-full pt-20 pb-32 bg-[#fff]  max-lg:p-16'>
                 <div className='flex flex-col justify-center items-center w-full h-full'>
                     <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                         <div className='sm:text-right pb-8 pl-4'>
-                            <p className='text-4xl font-montserrat inline text-white pb-4'>Servicios</p>
+                            <p className='text-4xl inline text-stone-800  pb-4'>Servicios</p>
 
                         </div>
                     </div>
 
-                    <div className='w-full  bg-[#2E2E2E] text-stone-800'>
+                    <div className='w-full  bg-[#fff] text-stone-800'>
 
                         <Container component="section" >
                             <Typography variant="h4" marked="center" align="center" component="h2">
