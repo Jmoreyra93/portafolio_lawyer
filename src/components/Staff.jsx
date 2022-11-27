@@ -12,9 +12,9 @@ const features = [
 
 export default function Example() {
   return (
-    <div className="bg-[#DDD4C3] shadow-inner text-black ">
-      <div className="mx-20  grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 max-lg:px-8 px-24 sm:px-2 sm:py-20 lg:max-w-7xl lg:px-10 max-lg:mx-1 max-lg:pb-1">
-        <div className="">
+    <div className="bg-[#fff] shadow-inner text-black ">
+      <div className="  mx-20  grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 max-lg:px-8 px-24 sm:px-2 sm:py-20 lg:max-w-7xl lg:px-10 max-lg:mx-1 max-lg:pb-1">
+        <div className="bg-[#DDD4C3] shadow-md hover:shadow-lg rounded-md p-8">
           <p className=' text-4xl font-montserrat inline text-gray-800'>Nosotros</p>
           <p className="mt-4 font-montserrat text-2xl max-lg:text-base 	 text-gray-500">
           Al tratarse de procesos penales, resulta fundamental para nuestro staff entender las necesidades de quien confía su caso. Por ello, siempre habrá disponibilidad inmediata para actuar cuando la situación lo requiera. Trabajamos en el ámbito de CABA y Provincia de Buenos Aires, también en todo el país si se trata de causas que tramitan en el fuero federal. Trabajaremos así, de manera rápida y eficaz la mejor estrategia posible para la solución de su problema. 

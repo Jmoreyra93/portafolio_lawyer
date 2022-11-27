@@ -7,18 +7,21 @@ const Home = () => {
 
   return (
     <>
-      <div data-scroll-container name='home' className='w-full h-screen '>
+      <div  name='home' className='w-full h-screen '>
         {/* Container */}
-        <div data-scroll-section className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-          <h1 data-scroll data-scroll-delay='0.13' data-scroll-speed='4' className='text-4xl sm:text-7xl  text-[#333]'>
-            DRA. SPAGNA
-          </h1>
-          <h2 data-scroll data-scroll-delay='0.09' data-scroll-speed='4' className='text-4xl sm:text-7xl  text-[#333]'>
-            Abogada
-          </h2>
-          <h3 data-scroll data-scroll-delay='0.07' data-scroll-speed='4' className='text-2xl sm:text-4xl  text-[#333]'>
-            penalista
-          </h3>
+        <div  className=' max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full '>
+          <div className=' backdrop-blur-sm w-2/3 shadow-md hover:shadow-lg rounded-md bg-[#3333335a]'>
+            <h1   className='text-4xl sm:text-7xl  text-[#333] blur-none	'>
+              DRA. SPAGNA
+            </h1>
+            <h2  className='text-4xl sm:text-7xl  text-[#333] blur-none	'>
+              Abogada
+            </h2>
+            <h3 className='text-2xl sm:text-4xl  text-[#333] blur-none	'>
+              penalista
+            </h3>
+
+          </div>
 
 
         </div>

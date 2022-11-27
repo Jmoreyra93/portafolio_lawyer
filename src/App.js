@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import { dark } from "./styles/Themes";
 import { ThemeProvider } from "styled-components";
+import ScrollTriggerProxy from './components/ScrollTriggerProxy';
 
 
 
@@ -29,6 +30,8 @@ function App() {
         <AnimatePresence>
           {loaded ? null : <Loader />}
         </AnimatePresence>
+        <ScrollTriggerProxy />
+
       </ThemeProvider>
 
       <Navbar />
