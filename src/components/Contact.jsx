@@ -54,8 +54,8 @@ const Contact = () => {
 
       <div className='grid grid-cols-2  max-lg:grid-cols-1 px-8'>
         <Pulse>
-          <div className='w-full h-screen rounded-l-md	shadow-md hover:shadow-lg bg-[#343a40d0] flex justify-center items-center p-4 pb-20 pt-20 px-20 max-lg:pt-32 max-md:pt-0' >
-            <form className='flex flex-col pt-20 max-w-[600px] w-full' ref={form} onSubmit={sendEmail}   >
+          <div className='w-full h-screen rounded-l-md	shadow-md hover:shadow-lg bg-[#343a40d0] flex justify-center items-center p-4 pb-20 pt-20 px-20 max-lg:px-2  max-md:pt-0 max-md:h-min' >
+            <form className='flex flex-col pt-20 max-w-[600px] w-full max-lg:pt-2 ' ref={form} onSubmit={sendEmail}   >
               <div className='pb-8'>
                 <p className='text-4xl font-bold inline  text-gray-200'>Contactenos</p>
                 {/* <p className='text-[#829e7e] py-4'>Submit the form below or shoot me an email - julianmoreyra.192@gmail.com</p> */}
@@ -78,7 +78,7 @@ const Contact = () => {
 
             </form>
           </div>
-        <div className='w-full h-screen bg-[#343a40] rounded-r-md flex flex-col  items-center p-4 pt-20 px-20'>
+        <div className='w-full h-screen bg-[#343a40] rounded-r-md flex flex-col  items-center p-4 pt-20 px-20 max-lg:px-2  max-md:h-min max-md:pt-2 max-md:pb-8'>
           <p className='text-2xl font-bold inline text-gray-200 pt-20'>Info</p>
 
           <List sx={{ width: '100%', maxWidth: 360 }}>
