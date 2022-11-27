@@ -12,7 +12,7 @@ const features = [
 
 export default function Example() {
   return (
-    <div className="bg-[#fff] shadow-inner text-black ">
+    <div className="bg-[#fff] flex justify-center shadow-inner text-black ">
       <div className="  mx-20  grid max-w-2xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 max-lg:px-8 px-24 sm:px-2 sm:py-20 lg:max-w-7xl lg:px-10 max-lg:mx-1 max-lg:pb-1">
         <div className="bg-[#DDD4C3] shadow-md hover:shadow-lg rounded-md p-8">
           <p className=' text-4xl font-montserrat inline text-gray-800'>Nosotros</p>
