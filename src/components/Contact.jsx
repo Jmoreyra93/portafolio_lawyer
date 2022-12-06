@@ -84,29 +84,29 @@ const Contact = () => {
               <p className='text-2xl font-bold inline text-gray-200 pt-20'>Info</p>
 
               <List sx={{ width: '100%', maxWidth: 360 }}>
-                <ListItem >
+                <ListItem  component="a" href="https://wa.me/+5491144776913" target='_blank' rel="noreferrer">
                   <ListItemAvatar >
                     <Avatar sx={{ bgcolor: '#343a40' }} >
                       <WhatsAppIcon />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText sx={{ color: '#ddd4c3' }} primary="WhatsApp" secondary="1144776913 / 1122423900" />
+                  <ListItemText sx={{ color: '#ddd4c3' }} primary="WhatsApp"  />
                 </ListItem>
-                <ListItem>
+                <ListItem  component="a" href="https://www.google.com" target='_blank' rel="noreferrer">
                   <ListItemAvatar>
                     <Avatar sx={{ bgcolor: '#343a40' }}>
                       <EmailIcon />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText sx={{ color: '#ddd4c3' }} primary="Email" secondary="spagnayasoc@gmail.com" />
+                  <ListItemText sx={{ color: '#ddd4c3' }} primary="Email"  />
                 </ListItem>
-                <ListItem>
+                <ListItem  component="a" href="https://www.instagram.com/spagnaasociados/" target='_blank' rel="noreferrer">
                   <ListItemAvatar>
                     <Avatar sx={{ bgcolor: '#343a40' }}>
                       <InstagramIcon />
                     </Avatar>
                   </ListItemAvatar>
-                  <ListItemText sx={{ color: '#ddd4c3' }} primary="Instagram" secondary="@spagnayasoc" />
+                  <ListItemText sx={{ color: '#ddd4c3' }} primary="Instagram"  />
                 </ListItem>
               </List>
 
