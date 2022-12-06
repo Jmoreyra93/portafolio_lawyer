@@ -23,7 +23,7 @@ const Navbar = () => {
       {/* menu */}
       <ul className='hidden md:flex'>
         <li>
-          <Link to='home' smooth={true}  duration={500} activeClass="active" className=' active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
+          <Link to='home' smooth={true}  duration={500} activeClass="active" className=' focus:outline-none focus:ring focus:ring-violet-300'>
             Inicio
           </Link>
         </li>
