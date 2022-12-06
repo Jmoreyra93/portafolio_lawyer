@@ -16,14 +16,14 @@ export default function Example() {
 
       <div className="bg-[#fff]  flex justify-center  text-black max-lg:pb-20 ">
         <div className="  mx-20  grid max-w-7xl grid-cols-1 items-center gap-y-16 gap-x-8 py-24 max-lg:px-8 px-24 sm:px-2 sm:py-20 lg:max-w-7xl lg:px-10 max-lg:mx-1 max-lg:pb-1">
-          <div className="bg-[#DDD4C3] shadow-md hover:shadow-lg rounded-3xl p-8">
-            <p className=' text-4xl  inline text-gray-800'>Nosotros</p>
-            <p className="mt-4  text-2xl max-lg:text-base 	 text-gray-500">
+          <div className="bg-[#595E63] shadow-md hover:shadow-lg rounded-3xl p-8">
+            <p className=' text-4xl  inline text-[#fff]'>Nosotros</p>
+            <p className="mt-4  text-2xl max-lg:text-base 	 text-[#fff]">
               Al tratarse de procesos penales, resulta fundamental para nuestro staff entender las necesidades de quien confía su caso. Por ello, siempre habrá disponibilidad inmediata para actuar cuando la situación lo requiera. Trabajamos en el ámbito de CABA y Provincia de Buenos Aires, también en todo el país si se trata de causas que tramitan en el fuero federal. Trabajaremos así, de manera rápida y eficaz la mejor estrategia posible para la solución de su problema.
             </p>
             <dl className=" mt-16 px-28 grid gap-x-6 gap-y-10 sm:grid-cols-3 max-lg:grid-cols-1 sm:gap-y-16 lg:gap-x-8 max-lg:px-4">
               {features.map((feature) => (
-                <div key={feature.name} className="border-gray-200 bg-[#56544f]  shadow-md hover:shadow-lg rounded-md">
+                <div key={feature.name} className="border-gray-200 bg-[#343A40]  shadow-md hover:shadow-lg rounded-md">
                   <div className="flex flex-col justify-center self-center">
                     <img className="object-cover		 h-48 w-96" src={feature.image} alt="" />
                   </div>
