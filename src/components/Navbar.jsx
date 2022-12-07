@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className='flex'>
         <BalanceIcon/>
 
-        <p className='px-4'>Dra Spagna</p>
+        <p className='px-4 cursor-default'>Dra Spagna</p>
       </div>
 
       {/* menu */}

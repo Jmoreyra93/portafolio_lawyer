@@ -108,16 +108,16 @@ const images = [
 export default function ProductCategories() {
     return (
 
-            <div data-scroll-container name='servicios' className='pt-20 pb-32 bg-[#fff]  max-lg:p-16'>
+            <div data-scroll-container name='servicios' className='pt-20 pb-32 bg-[#1F1F1F]  max-lg:p-0'>
                 <div className='flex flex-col 	 justify-center items-center h-full'>
                     <div className='max-w-[1000px] w-max  grid grid-cols-2 gap-8'>
-                        <div className='sm:text-right pb-8 pl-4'>
-                            <p className='text-4xl inline text-stone-800  pb-4'>Servicios</p>
+                        <div className='sm:text-right pb-8 pl-4 max-lg:pt-4'>
+                            <p className='text-4xl inline text-stone-200  pb-4 '>Servicios</p>
 
                         </div>
                     </div>
 
-                    <div className='w-full  bg-[#fff] text-stone-800'>
+                    <div className='w-full  bg-[#1F1F1F] text-stone-800'>
 
                         <Container className='max-w-7xl mx-auto' component="section"  >
                             <Typography variant="h4" marked="center" align="center" component="h2">

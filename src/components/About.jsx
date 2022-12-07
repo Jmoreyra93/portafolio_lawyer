@@ -8,10 +8,10 @@ const About = () => {
 
     <>
 
-      <div name='about' className='w-full p-32 bg-[#fff] text-stone-200 max-lg:p-16'>
+      <div name='about' className='w-full p-32 bg-[#1F1F1F] text-stone-200  max-lg:p-0'>
         <div className='flex flex-col max-w-7xl mx-auto	 justify-center items-center w-full h-full '>
 
-            <div className=' w-full flex flex-row justify-center items-center bg-[#595E63] shadow-md hover:shadow-lg rounded-3xl	max-lg:pr-0 sm:grid-cols-2  pr-4 max-lg:flex-col'>
+            <div className=' w-full flex flex-row justify-center items-center bg-[#595E63] shadow-md hover:shadow-lg rounded-3xl	max-lg:pr-0 sm:grid-cols-2  pr-4 max-lg:flex-col max-lg:rounded-none'>
 
               <img className='w-80' src={PhotoLawyer} alt="HTML icon" />
 

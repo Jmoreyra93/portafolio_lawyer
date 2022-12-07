@@ -53,7 +53,7 @@ const Contact = () => {
     <>
           <img className="" src={image_04} alt="" />
 
-      <div name='contact' className='bg-[#fff]  bg-no-repeat bg-cover bg-fixed max-lg:p-2 p-20' >
+      <div name='contact' className='bg-[#1F1F1F]  bg-no-repeat bg-cover bg-fixed max-lg:p-2 p-20' >
 
         <div className='grid grid-cols-2 max-w-7xl mx-auto	 max-lg:grid-cols-1 px-8'>
             <div className='w-full h-screen rounded-l-3xl	shadow-md hover:shadow-lg bg-[#343a40d0] flex justify-center items-center p-4 pb-20 pt-20 px-20 max-lg:px-4  max-md:pt-4 max-md:h-min max-lg:rounded-t-3xl max-lg:rounded-bl-none' >
